@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Orders</title>
+</head>
+<body>
+<h2>Orders:</h2>
+<hr>
+<div>
+    <form action="/orders" method="POST" enctype="multipart/form-data">
+        <p>Name</p>
+        <div>
+            <textarea name="name" rows="1" ></textarea>
+        </div>
+        <p>Description</p>
+        <div>
+            <textarea name="description" rows="1" ></textarea>
+        </div>
+        <p>Start date</p>
+        <div>
+            <textarea name="start_date" rows="1" ></textarea>
+        </div>
+        <p>End date</p>
+        <div>
+            <textarea name="end_date" rows="1" ></textarea>
+        </div>
+        <p>Address</p>
+        <div>
+            <textarea name="address" rows="1" ></textarea>
+        </div>
+        <p>Price</p>
+        <div>
+            <textarea name="price" rows="1" ></textarea>
+        </div>
+        <p>Customer id</p>
+        <div>
+            <textarea name="customer_id" rows="1" ></textarea>
+        </div>
+        <p>Executor id</p>
+        <div>
+            <textarea name="executor_id" rows="1" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Add order" class="button">
+        </div>
+    </form>
+</div>
+<hr>
+<div>
+{{result}}
+</div>
+</body>
+</html>

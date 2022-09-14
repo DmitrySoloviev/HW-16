@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<h2>User {{number}}:</h2>
+{{result}}
+<form action="/users/{{number}}" method="PUT" enctype="multipart/form-data">
+    <p>First name</p>
+    <div>
+       <textarea name="first_name" rows="1" ></textarea>
+    </div>
+    <p>Last name</p>
+    <div>
+       <textarea name="last_name" rows="1" ></textarea>
+    </div>
+    <div>
+       <input type="submit" value="Change user" class="button">
+    </div>
+</form>
+</div>
+<div>
+<form action="/users/{{number}}" method="DELETE" enctype="multipart/form-data">
+    <div>
+       <input type="submit" value="Delete user" class="button">
+    </div>
+</form>
+</div>
+</body>
+</html>

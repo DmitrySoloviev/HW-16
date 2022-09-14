@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+<h2>Users:</h2>
+<hr>
+<div>
+    <form action="/users" method="POST" enctype="multipart/form-data">
+        <p>First name</p>
+        <div>
+            <textarea name="first_name" rows="1" ></textarea>
+        </div>
+        <p>Last name</p>
+        <div>
+            <textarea name="last_name" rows="1" ></textarea>
+        </div>
+        <p>Age</p>
+        <div>
+            <textarea name="age" rows="1" ></textarea>
+        </div>
+        <p>Email</p>
+        <div>
+            <textarea name="email" rows="1" ></textarea>
+        </div>
+        <p>Role</p>
+        <div>
+            <textarea name="role" rows="1" ></textarea>
+        </div>
+        <p>Phone</p>
+        <div>
+            <textarea name="phone" rows="1" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Add user" class="button">
+        </div>
+    </form>
+</div>
+<hr>
+<div>
+  {{result}}
+</div>
+</body>
+</html>

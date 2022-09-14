@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Offers</title>
+</head>
+<body>
+<h2>Offers:</h2>
+<div>
+<form action="/offers" method="POST" enctype="multipart/form-data">
+        <p>Order id</p>
+        <div>
+            <textarea name="order_id" rows="1" ></textarea>
+        </div>
+        <p>Executor id</p>
+        <div>
+            <textarea name="executor_id" rows="1" ></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Add offer" class="button">
+        </div>
+</form>
+{{result}}
+</body>
+</html>
